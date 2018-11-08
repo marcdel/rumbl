@@ -1,12 +1,16 @@
 defmodule Rumbl.Multimedia.Category do
   use Ecto.Schema
+  import Ecto.Query
   import Ecto.Changeset
 
-
   schema "categories" do
-    field :name, :string
+    field(:name, :string)
 
     timestamps()
+  end
+
+  def alphabetical(query) do
+    from(c in query, order_by: c.name)
   end
 
   @doc false
