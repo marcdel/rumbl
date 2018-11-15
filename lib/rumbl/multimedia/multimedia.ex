@@ -1,7 +1,7 @@
 defmodule Rumbl.Multimedia do
   import Ecto.Query, warn: false
   alias Rumbl.Accounts
-  alias Rumbl.Multimedia.{Video, Category.Annotation}
+  alias Rumbl.Multimedia.{Video, Category, Annotation}
   alias Rumbl.Repo
 
   def list_user_videos(%Accounts.User{} = user) do
