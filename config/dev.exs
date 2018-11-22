@@ -73,3 +73,6 @@ config :rumbl, Rumbl.Repo,
   database: "rumbl_dev",
   hostname: "localhost",
   pool_size: 10
+
+# contains `config :rumbl, :wolfram, app_id: "THE_APP_ID"`
+import_config "dev.secret.exs"
