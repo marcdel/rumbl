@@ -8,5 +8,6 @@ alias Rumbl.Accounts
 alias Rumbl.Accounts.{User, Credential}
 alias Rumbl.Multimedia
 alias Rumbl.Multimedia.{Video, Category, Permalink, Annotation}
+alias Rumbl.InfoSys.Cache
 
 alias RumblWeb.Router.Helpers, as: Routes
